@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.36e47efc.css",
+    "main.js": "/portfolio/static/js/main.51c7ef66.js",
+    "static/media/frontend-yol-haritam.png": "/portfolio/static/media/frontend-yol-haritam.205dc51901579fad7841.png",
+    "static/media/osf-project-image.png": "/portfolio/static/media/osf-project-image.b4362ec261c7b637c5ef.png",
+    "static/media/candycrush-react-image.png": "/portfolio/static/media/candycrush-react-image.a600d51959b0588de1c5.png",
+    "static/media/orienteering.png": "/portfolio/static/media/orienteering.5ca42a555cdfd6e61726.png",
+    "static/media/motorsports.png": "/portfolio/static/media/motorsports.e2553312d97e43d0522f.png",
+    "static/media/headshot.png": "/portfolio/static/media/headshot.d845e9a10d5daff010a9.png",
+    "static/media/todo-list-image.png": "/portfolio/static/media/todo-list-image.ca7bcc16c24f67b0522a.png",
+    "static/media/aviation.png": "/portfolio/static/media/aviation.d8142bfde79341cb21fa.png",
+    "static/media/booklet-image.png": "/portfolio/static/media/booklet-image.68d16f39ffdc56321ae4.png",
+    "static/media/candycrush-javascript-image.png": "/portfolio/static/media/candycrush-javascript-image.08b76633d95188d05f2b.png",
+    "static/media/firebase-image.png": "/portfolio/static/media/firebase-image.8726ccb127f2ec31852e.png",
+    "static/media/memorygame-image.png": "/portfolio/static/media/memorygame-image.fcf20f69e5b2c043f1f0.png",
+    "index.html": "/portfolio/index.html",
+    "main.36e47efc.css.map": "/portfolio/static/css/main.36e47efc.css.map",
+    "main.51c7ef66.js.map": "/portfolio/static/js/main.51c7ef66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36e47efc.css",
+    "static/js/main.51c7ef66.js"
+  ]
+}
