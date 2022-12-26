@@ -1,0 +1,144 @@
+/******************comment log**************************/
+:root{
+    --beige:#e6eed6;
+    --nickel:#626c66;
+    --bluebell:#b7adcf;
+    --caputmortuum:#4c2719;
+    --orangepeel:#ffa62b;
+
+    --color1:#463f3a ;
+    --color2:#8a817c ;
+    --color3:#bcb8b1 ;
+    /* --color4:#e0afa0 ; */
+    --color4:rgb(221, 189, 181);
+    --color5:#f4f3ee ;
+  }
+  .comment-log{
+  }
+  .comment-section{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    margin-top: 50px;
+}
+.single-comment-box{
+    border: 3px solid var(--color3);
+    background-color: var(--color5);
+    border-radius: 15px;
+    margin: 10px;
+    width: 80%;
+
+    padding: 10px;
+    justify-self: center;
+    }
+    .single-comment-box h4{
+      font-size: 12px;
+      margin: 5px;
+    }
+    .single-comment-box p{
+      font-size: 13px;
+      margin: 5px;
+      width: 80%;
+    }
+.button-box{
+  float: right;
+}
+.like-button{
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+}
+.dislike-button{
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    top: 3px;  
+}
+.comment-buttons{
+    background-color: var(--color5);
+    border: 1px solid  var(--color2);
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer; 
+    height: 25px;
+    margin: 0 5px 0 0px;
+}
+.comment-buttons:hover{
+    background-color: var(--color5);
+    border: 2px solid  var(--color2);
+    padding: 4px 9px 4px 9px;
+}
+.comment-buttons:active{
+    background-color: var(--color5);
+    border: none;
+    padding: 6px 11px 6px 11px;
+}
+.comment-box{
+    width: 100%;
+    display: flex;
+}
+.comment-box form{
+     width: 100%; 
+    display: grid;
+}
+.comment-box .comment-buttons{
+   margin: 7px;
+}
+.comment-box textarea{
+    width: 70%;
+    height: 50px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid var(--color2);
+    background-color: var(--color5);
+    font-size: 16px;
+    padding: 5px;   
+    font-family: "Poppins";
+    border-radius: 3px 5px;
+    outline: none;
+    resize: none;
+    justify-self: right;
+}
+.comment-box p{
+  justify-self: right;
+}
+.comment-box .comment-buttons{
+  width: 60px;
+  justify-self: right;
+}
+textarea:is(:focus){
+     border-color: var(--color1); 
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.comment-right-container{
+    height: auto;
+   margin: 2px 4vw 0 0 ;
+}
+.user-container, .user-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+  }
+  .user-container{
+    width: 100%;
+  }
+  .user-card{
+    border: 2px solid var(--color3);
+    background-color: var(--color5);
+    padding: 0 0px 0 10px;
+    margin-left: 10px;
+    border-radius: 500px;
+    height: 50px;
+  }
+  .user-container img{
+    border-radius: 500px;
+   border: 3px solid var(--color3);
+   height: 50px;
+   width: 50px;
+   margin-left: 10px;
+  }
+  .user-card p{
+    margin-left: 5px;
+  }

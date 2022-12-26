@@ -1,0 +1,105 @@
+:root{
+    --beige:#e6eed6;
+    --nickel:#626c66;
+    --bluebell:#b7adcf;
+    --caputmortuum:#4c2719;
+    --orangepeel:#ffa62b;
+
+    --color1:#463f3a ;
+    --color2:#8a817c ;
+    --color3:#bcb8b1 ;
+    /* --color4:#e0afa0 ; */
+    --color4:rgb(221, 189, 181);
+    --color5:#f4f3ee ;
+
+  }
+  .myprojects-box{
+   border: 8px solid var(--color1);
+    border-radius:15px ;
+    padding: 5px 5px 30px 5px;
+  }
+  .projects-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns:auto auto auto ; */
+  }
+
+.project-item{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color3);
+    color: var(--color1);
+    margin: 10px;
+    border-radius: 17px;
+    padding: 15px 0 25px 0;
+}
+.project-item a{
+    text-decoration: none;
+    color: var(--color4);
+}
+.myprojects-box h1{ 
+  font-size: 27px;
+}
+.myprojects-box h3{ 
+  font-size: 23px;
+}
+.project-item h1{
+ margin: 5px 0 0 0;
+ font-size: 25;
+}
+.project-item h3{
+    margin: 5px 0 0 0;
+   }
+  .project-image{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--color4);
+    border-radius: 40px;
+  }
+.link-container{
+    display: flex;
+    justify-content: center;
+}
+  .gh-container, .web-container{
+    width: 35px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    margin: 5px;
+    border: 1px solid var(--color4);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .gh-container:hover, .web-container:hover{
+    border: 5px solid var(--color4);
+    margin: 1px;
+  }
+  .introduction-to-projects{
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color3);
+    color: var(--color1);
+
+  }
+
+  @media only screen and (max-width:1000px){
+    .projects-container{
+    grid-template-columns: 50% 50%;
+    }
+    .myprojects-box h1{ 
+      font-size: 20px;
+    }
+    .myprojects-box h3{ 
+      font-size: 17px;
+    }
+ 
+
+  }

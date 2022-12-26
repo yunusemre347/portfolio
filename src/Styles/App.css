@@ -1,0 +1,66 @@
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+
+/* 
+beige:#e6eed6
+nickel:#626c66
+bluebell:#b7adcf
+caputmortuum:#4c2719
+orangepeel:#ffa62b */
+
+:root{
+  --beige:#e6eed6;
+  --nickel:#626c66;
+  --bluebell:#b7adcf;
+  --caputmortuum:#4c2719;
+  --orangepeel:#ffa62b;
+
+  --color1:#463f3a ;
+    --color2:#8a817c ;
+    --color3:#bcb8b1 ;
+    /* --color4:#e0afa0 ; */
+    --color4:rgb(221, 189, 181);
+    --color5:#f4f3ee ;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background: linear-gradient(var(--color2),var(--color5));
+}
+
+body{ 
+  color: var(--color1);
+  font-family: 'Poppins' , sans-serif;
+  background-color: var(--color2);
+}
+.App{
+  margin: 0;
+  padding: 0;
+  /*might delete this part*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   /*might delete this part*/
+  
+}
+.general-container{
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width:800px){
+  .general-container{
+    width: 100%;
+  }
+}
+
+.objectImage{
+  width: 200px;
+  height: 200px;
+
+}

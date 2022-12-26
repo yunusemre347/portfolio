@@ -1,0 +1,51 @@
+:root{
+    --beige:#e6eed6;
+    --nickel:#626c66;
+    --bluebell:#b7adcf;
+    --caputmortuum:#4c2719;
+    --orangepeel:#ffa62b;
+
+    --color1:#463f3a ;
+    --color2:#8a817c ;
+    --color3:#bcb8b1 ;
+    /* --color4:#e0afa0 ; */
+    --color4:rgb(221, 189, 181);
+    --color5:#f4f3ee ;
+  }
+  .hobbie-container{
+    display: grid;
+    text-align: center;
+   margin: 60px 10px 10px 10px;
+  }
+  .hobbie-container img{
+    border-radius: 15px;
+    float: left;
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .hobbie-container p{
+  
+  }
+  .hobbie-wrapper{
+    border: 4px var(--color4) solid;
+    background-color: var(--color5);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 60vw;
+    height: 120px;
+  }
+  .heading{
+    width: 50%;
+    justify-self: center;
+    height: auto;
+    margin-bottom: 19px;
+  }
+
+  #middle-wrapper{
+   justify-self: right;
+  }
+  #middle-image{
+    float: right;
+  }

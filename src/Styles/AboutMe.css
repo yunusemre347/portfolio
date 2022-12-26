@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins&display=swap');
+:root{
+    --beige:#e6eed6;
+    --nickel:#626c66;
+    --bluebell:#b7adcf;
+    --caputmortuum:#4c2719;
+    --orangepeel:#ffa62b;
+
+    --color1:#463f3a ;
+    --color2:#8a817c ;
+    --color3:#bcb8b1 ;
+    /* --color4:#e0afa0 ; */
+    --color4:rgb(221, 189, 181);
+    --color5:#f4f3ee ;
+
+  }
+.skill-container{
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: var(--color3);
+  margin: 0 15px;
+  padding: 10px 20px ;
+  border-radius: 7px;
+  
+}
+.title-text{
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color5);
+    font-weight: 400;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.skill-container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+
+}
+.skill-box .skill-title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1) ;
+}
+.skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 6px;
+    background: var(--color2);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.html{
+    width: 50%;
+    animation-delay: 0.1s;
+}
+.skill-per.css{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.javascript{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+.skill-per.react{
+    width: 25%;
+    animation-delay: 0.4s;
+}
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: var(--color5);
+    padding: 2px 6px ;
+    border-radius: 3px;
+    background: var(--color1);
+    z-index: 1;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    background-color: var(--color1);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.about-me-container{
+display: flex;
+justify-content: space-around;
+margin: 15px 0 0px 0;
+padding: 50px 15px 50px 15px;
+background-color: var(--color1);
+}
+.roadmap-container{
+    margin: 0 0 15px 0;
+    padding: 60px 0px 60px 0px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+}
+.roadmap-container img{
+    width: 900px;
+}
+.roadmap-clip{
+    position: relative;  
+    width: 900px;
+    min-height: 400px;
+}
+.roadmap-clip img{
+    position: absolute;
+    clip: rect(0, 900px, 400px, 0);
+}
+.roadmap-clip::after{
+    width:100%;
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%,rgba(0, 0, 0, 0) 100%);
+    height:100%;
+}
+#roadmap-check{
+    display: none;
+}
+.show-roadmap-top{
+    cursor: pointer;
+    position: absolute;
+    color: rgba(107, 107, 107, 0.719);
+    z-index: 9;
+    top: 2px;
+    left: calc(50% - 101px);
+}
+.hide-roadmap-top{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    color: rgba(107, 107, 107, 0.719);
+    z-index: 9;
+    top: 2px;
+    left: calc(50% - 101px);
+}
+#roadmap-check:checked ~ .roadmap-clip img{
+    /* display: none; */
+    clip: rect(0,1000px,10000px,0);
+    position: static;
+}
+#roadmap-check:checked ~ .roadmap-clip  .show-roadmap-top{
+    display: none;
+ }
+#roadmap-check:checked ~ .roadmap-clip  .hide-roadmap-top{
+    display: inline;
+ }
+#roadmap-check:checked ~ .roadmap-clip::after{
+  background: none;
+}
