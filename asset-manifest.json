@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.36e47efc.css",
-    "main.js": "/portfolio/static/js/main.51c7ef66.js",
+    "main.css": "/portfolio/static/css/main.9ca9b07c.css",
+    "main.js": "/portfolio/static/js/main.fc13a8c8.js",
     "static/media/frontend-yol-haritam.png": "/portfolio/static/media/frontend-yol-haritam.205dc51901579fad7841.png",
     "static/media/osf-project-image.png": "/portfolio/static/media/osf-project-image.b4362ec261c7b637c5ef.png",
     "static/media/candycrush-react-image.png": "/portfolio/static/media/candycrush-react-image.a600d51959b0588de1c5.png",
@@ -14,12 +14,13 @@
     "static/media/candycrush-javascript-image.png": "/portfolio/static/media/candycrush-javascript-image.08b76633d95188d05f2b.png",
     "static/media/firebase-image.png": "/portfolio/static/media/firebase-image.8726ccb127f2ec31852e.png",
     "static/media/memorygame-image.png": "/portfolio/static/media/memorygame-image.fcf20f69e5b2c043f1f0.png",
+    "static/media/thumbs-up-green.png": "/portfolio/static/media/thumbs-up-green.c7db106946046114b1bf.png",
     "index.html": "/portfolio/index.html",
-    "main.36e47efc.css.map": "/portfolio/static/css/main.36e47efc.css.map",
-    "main.51c7ef66.js.map": "/portfolio/static/js/main.51c7ef66.js.map"
+    "main.9ca9b07c.css.map": "/portfolio/static/css/main.9ca9b07c.css.map",
+    "main.fc13a8c8.js.map": "/portfolio/static/js/main.fc13a8c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.36e47efc.css",
-    "static/js/main.51c7ef66.js"
+    "static/css/main.9ca9b07c.css",
+    "static/js/main.fc13a8c8.js"
   ]
 }
