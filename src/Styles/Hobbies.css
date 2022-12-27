@@ -51,11 +51,12 @@
   }
   @media only screen and (max-width:1000px) {
     .hobbie-wrapper{
-      width: 80vw;
+      width: 95%;
+      justify-self: center;
       height: auto;
     }
     #middle-wrapper{
-      justify-self: normal;
+      justify-self: center;
      }
      #middle-image{
        float: none;

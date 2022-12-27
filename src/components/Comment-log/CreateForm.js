@@ -12,7 +12,7 @@ export const CreateForm = () => {
   const {update ,setUpdate} = useContext(UpdateContext)  //curly instead of square brackets
  
 
-  const [textHeight,setTextHeight]=useState(50)
+  const [textHeight,setTextHeight]=useState(70)
   const textareaRef = useRef(null)
   const heightRef = useRef(null)
 
@@ -48,12 +48,6 @@ const handleChange =(event)=>{
 
    const scHeight = event.target.scrollHeight;
    event.target.row=1;
-
-   console.log(event.target.row)
-    console.log(scHeight)
- 
-    // console.log(event.target.value)
-
    setTextHeight(scHeight-10)
 }
 const notLoggedInAlert=()=>{

@@ -121,6 +121,12 @@ border-bottom: 5px solid #ea4335;
     resize: none;
     justify-self: right;
 }
+@media only screen and (max-width:1000px)  {
+  .comment-box textarea{
+    width: 95%;
+    /* margin: 0 auto 0 auto; */
+  }
+}
 .comment-box p{
   justify-self: right;
 }
