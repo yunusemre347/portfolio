@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9ca9b07c.css",
-    "main.js": "/portfolio/static/js/main.fc13a8c8.js",
+    "main.css": "/portfolio/static/css/main.6c967399.css",
+    "main.js": "/portfolio/static/js/main.d8363d7b.js",
     "static/media/frontend-yol-haritam.png": "/portfolio/static/media/frontend-yol-haritam.205dc51901579fad7841.png",
     "static/media/osf-project-image.png": "/portfolio/static/media/osf-project-image.b4362ec261c7b637c5ef.png",
     "static/media/candycrush-react-image.png": "/portfolio/static/media/candycrush-react-image.a600d51959b0588de1c5.png",
@@ -16,11 +16,11 @@
     "static/media/memorygame-image.png": "/portfolio/static/media/memorygame-image.fcf20f69e5b2c043f1f0.png",
     "static/media/thumbs-up-green.png": "/portfolio/static/media/thumbs-up-green.c7db106946046114b1bf.png",
     "index.html": "/portfolio/index.html",
-    "main.9ca9b07c.css.map": "/portfolio/static/css/main.9ca9b07c.css.map",
-    "main.fc13a8c8.js.map": "/portfolio/static/js/main.fc13a8c8.js.map"
+    "main.6c967399.css.map": "/portfolio/static/css/main.6c967399.css.map",
+    "main.d8363d7b.js.map": "/portfolio/static/js/main.d8363d7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ca9b07c.css",
-    "static/js/main.fc13a8c8.js"
+    "static/css/main.6c967399.css",
+    "static/js/main.d8363d7b.js"
   ]
 }
