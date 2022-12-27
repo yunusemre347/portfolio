@@ -2,6 +2,7 @@ import React from 'react'
 import "../Styles/AboutMe.css"
 import headshot from "../images/headshot.png" //dont use curly unnecessary
 import roadmap from "../images/frontend-yol-haritam.png"
+import thumbsUpGreen from "../images/thumbs-up-green.png"
 
 export const AboutMe = () => {
   return (
@@ -51,7 +52,7 @@ export const AboutMe = () => {
       <img className='headshot' src={headshot} alt={"my headshot"}  />
       
     </div>
-
+    <p className='roadmap-description'>This is a roadmap made by the roadmap.sh . I have marked my progress with thumbs up "<img className='thumbs-up-green' src={thumbsUpGreen} alt="thumbs up green"/>" .</p>
     <div className='roadmap-container'> 
     <input type="checkbox" id="roadmap-check"/> 
     <div className='roadmap-clip'>

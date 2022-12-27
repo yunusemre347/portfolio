@@ -15,7 +15,7 @@
   .hobbie-container{
     display: grid;
     text-align: center;
-   margin: 60px 10px 10px 10px;
+   margin: 3.6vw 10px 10px 10px;
   }
   .hobbie-container img{
     border-radius: 15px;
@@ -48,4 +48,22 @@
   }
   #middle-image{
     float: right;
+  }
+  @media only screen and (max-width:1000px) {
+    .hobbie-wrapper{
+      width: 80vw;
+      height: auto;
+    }
+    #middle-wrapper{
+      justify-self: normal;
+     }
+     #middle-image{
+       float: none;
+     }
+     .hobbie-container img{
+      float: none;
+     }
+     .hobbie-container p{
+      margin:0;
+     }
   }

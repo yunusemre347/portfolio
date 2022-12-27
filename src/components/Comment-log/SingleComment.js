@@ -118,7 +118,7 @@ const dislikedEmptyIcon=<FontAwesomeIcon icon={faThumbsDownRegular} style={{font
         <span className='like-button' onClick={likeAction}>{hasUserLiked ? likedFullIcon : likedEmptyIcon} {likes?.length}</span> 
         <span className='dislike-button' onClick={ dislikeAction}>{hasUserDisliked ? dislikedFullIcon: dislikedEmptyIcon} {dislikes?.length} </span>
         </div>
-        <div className='arrow-up' ></div>
+        
          {/* bu dislike butonu olacak */}
         {/* <p className='likes-count'> Likes : {likes?.length}</p>
         <p  className='likes-count'> Dislikes : {dislikes?.length} </p> */}

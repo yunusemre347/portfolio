@@ -23,6 +23,7 @@
   margin: 0 15px;
   padding: 10px 20px ;
   border-radius: 7px;
+  margin-bottom: 10px;
   
 }
 .title-text{
@@ -33,6 +34,7 @@
     border-radius: 50px;
     margin-top: 15px;
     margin-bottom: 30px;
+    font-size: 3vh;
 }
 .skill-container .skill-box{
     width: 100%;
@@ -116,19 +118,39 @@
 .about-me-container{
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 margin: 15px 0 0px 0;
-padding: 50px 15px 50px 15px;
+padding: 50px 15px 70px 15px;
 background-color: var(--color1);
+}
+
+.headshot{
+     /* object-fit: scale-down; bu lanet olası beni baya ugrastırdı */ 
+       width: clamp(150px,85%,400px);   
+       height: clamp(150px,85%,400px);  
+       border-radius: 500px; 
+}
+
+.roadmap-description{
+    text-align: center;
+    background-color: var(--color1);
+    margin: 0;
+    color: var(--color3);
+}
+.thumbs-up-green{
+    height: 27px;
+    margin-bottom: -7px;
 }
 .roadmap-container{
     margin: 0 0 15px 0;
-    padding: 60px 0px 60px 0px;
+    padding: 10px 0px 3.6vw 0px;
     background-color: var(--color1);
     display: flex;
     justify-content: center;
 }
 .roadmap-container img{
-    width: 900px;
+  
+    width: clamp(370px,100%,900px); 
 }
 .roadmap-clip{
     position: relative;  
@@ -157,7 +179,7 @@ background-color: var(--color1);
     position: absolute;
     color: rgba(107, 107, 107, 0.719);
     z-index: 9;
-    top: 2px;
+    bottom: 2px;
     left: calc(50% - 101px);
 }
 .hide-roadmap-top{
@@ -182,4 +204,8 @@ background-color: var(--color1);
  }
 #roadmap-check:checked ~ .roadmap-clip::after{
   background: none;
+}
+
+@media only screen and (max-width:800px) {
+      
 }

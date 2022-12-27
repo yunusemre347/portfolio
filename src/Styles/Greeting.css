@@ -19,7 +19,7 @@ width: 100%;
 background-color: var(--color3);
 color: var(--color1);
 padding: 0 0 0 0 ;
-font-size: 50px;
+font-size: 5.3vh;
 justify-content: center;
 }
 .greeting-header{
@@ -63,11 +63,7 @@ margin-top: 10vw;
   margin-right:10%;
   align-items: center;
 }
-.headshot{
-object-fit: scale-down;
- width: clamp(150px,100%,400px); 
- border-radius: 5000px; 
-}
+
 @media only screen and (max-width:800px){
   .headshot{
     width: 250px;

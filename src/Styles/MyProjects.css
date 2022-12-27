@@ -25,15 +25,17 @@
   }
 
 .project-item{
-    display: block;
+    display: grid;
+   grid-template-rows: 20vh auto auto auto ;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     background-color: var(--color3);
     color: var(--color1);
-    margin: 10px;
+    margin: 0.55vw;
     border-radius: 17px;
-    padding: 15px 0 25px 0;
+    padding: 0.9vw 0 1.5vw 0;
 }
 .project-item a{
     text-decoration: none;
@@ -44,9 +46,10 @@
 }
 .myprojects-box h3{ 
   font-size: 23px;
+ align-self: flex-end;
 }
 .project-item h1{
- margin: 5px 0 0 0;
+ margin: 10px 0 0 0;
  font-size: 25;
 }
 .project-item h3{
@@ -54,15 +57,20 @@
    }
   .project-image{
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 20vh;
+    height: 20vh;
+    max-width: 200px;
+    max-height: 200px;
+    /* height: clamp(100px,100%,150px); */
     object-fit: fill;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid var(--color4);
-    border-radius: 40px;
+    border: 0.3vw solid var(--color5);
+    border-radius: 3vh;
+   
   }
+ 
 .link-container{
     display: flex;
     justify-content: center;
@@ -78,21 +86,26 @@
     text-align: center;
     align-items: center;
   }
+  .web-container svg, .gh-container svg{
+   font-size: 27px;
+   margin-top: 2px;
+  }
   .gh-container:hover, .web-container:hover{
     border: 5px solid var(--color4);
     margin: 1px;
   }
   .introduction-to-projects{
-    margin: 15px;
-    padding: 15px;
+    margin: 0.9vw;
+    padding: 0.9vw;
     background-color: var(--color3);
     color: var(--color1);
-
   }
-
   @media only screen and (max-width:1000px){
     .projects-container{
     grid-template-columns: 50% 50%;
+    }
+    .myprojects-box{
+      border: none;
     }
     .myprojects-box h1{ 
       font-size: 20px;
@@ -100,6 +113,4 @@
     .myprojects-box h3{ 
       font-size: 17px;
     }
- 
-
   }

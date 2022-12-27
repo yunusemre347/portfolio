@@ -17,7 +17,7 @@ export const Greeting = () => {
       <div className='greeting-container'>
         <h2>HELLO</h2>
         <h3>I am Yunus Emre</h3>
-        <p>This is my personal portfolio. I am a front end developer.</p>
+        <p> I am a front end developer. This is my personal portfolio.</p>
         </div>
     </div>
   )

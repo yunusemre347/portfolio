@@ -20,13 +20,19 @@
     grid-template-columns: 50% 50% ;
     margin-top: 50px;
 }
+@media only screen and (max-width:800px) {
+  .comment-section{
+    grid-template-columns: auto ;
+}
+}
 .single-comment-box{
+  display: grid;
+  grid-template-rows: 20px auto 20px;
     border: 3px solid var(--color3);
     background-color: var(--color5);
     border-radius: 15px;
     margin: 10px;
     width: 80%;
-
     padding: 10px;
     justify-self: center;
     }
@@ -41,6 +47,7 @@
     }
 .button-box{
   float: right;
+  justify-self: flex-end;
 }
 .like-button{
     cursor: pointer;
@@ -59,9 +66,25 @@
     border-radius: 50px;
     padding: 5px 10px 5px 10px;
     cursor: pointer; 
-    height: 25px;
+    height: 28px;
     margin: 0 5px 0 0px;
 }
+#google-button:hover{
+border-bottom: 5px solid #ea4335;
+ border-left: 5px solid #34a853;
+ border-right: 5px solid #fbbc05;
+ border-top: 5px solid   #4285f4;
+ height: 35px;
+ padding: 5px 10px 5px 10px ;
+}
+#google-button{
+  border-top: 5px solid #ea4335;
+   border-right: 5px solid #34a853;
+   border-left: 5px solid #fbbc05;
+   border-bottom: 5px solid   #4285f4;
+   height: 35px;
+   
+  }
 .comment-buttons:hover{
     background-color: var(--color5);
     border: 2px solid  var(--color2);
