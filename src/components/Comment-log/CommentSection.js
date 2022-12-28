@@ -23,10 +23,8 @@ export const CommentSection = () => {
        setCommentsList(data.docs.map((doc)=>({...doc.data(),id:doc.id})))
     }
     
-    useEffect(()=>{
-        
-            getComments()
-                   
+    useEffect(()=>{ 
+            getComments()   
     },[update])//use context veya reduxla create form submitine göre güncellenecek.
    
   return (

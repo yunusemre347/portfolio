@@ -21,7 +21,7 @@ export const CreateForm = () => {
     description: yup.string().required("you must add a comment")
   });
 
-  const {register,handleSubmit,formState:{errors}} = useForm({
+  const {register,reset,handleSubmit,formState:{errors}} = useForm({
     resolver:yupResolver(schema)
   })
 
@@ -35,17 +35,18 @@ export const CreateForm = () => {
     username: user.displayName,
     userId: user.uid,
    })
-  
+  reset()
   }
  
   // use state
   // height:{valueinput} on something = {e=> setvalueinput(value)}
-
 //  heightRef.current
+const clickedSubmit =()=>{
+   setUpdate(!update);
+  // reset();
+}
 
 const handleChange =(event)=>{
-
-
    const scHeight = event.target.scrollHeight;
    event.target.row=1;
    setTextHeight(scHeight-10)
@@ -60,7 +61,7 @@ const notLoggedInAlert=()=>{
       {/* google comment create gözükmesi için giriş yapmak gerekecek. */}
       <form  onSubmit={handleSubmit(onCreateComment)} >
       <textarea onClick={notLoggedInAlert} onKeyDown={handleChange} style={{height:`${textHeight}px`}}  placeholder="Leave your comment here! Please let me know any opinion of yours about me or this website."{...register("description")  }></textarea>
-      <input className="comment-buttons"  onClick={()=> setUpdate(!update)} type="submit" value={"submit"} ></input>
+      <input className="comment-buttons"  onClick={clickedSubmit} type="submit" value={"submit"} ></input>
       <p style={{fontSize:"13px", color : "red"}}>{errors.description?.message}</p>
       </form>
     </div>

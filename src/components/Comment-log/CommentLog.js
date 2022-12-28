@@ -42,6 +42,7 @@ export const CommentLog = () => {
 
  const signInWithGoogle = async () => {
  const result = await signInWithPopup(auth,provider)
+
   }
   // const signInWithGithub = async () => {
   //   const result = await signInWithPopup(auth,ghProvider)
@@ -51,22 +52,20 @@ export const CommentLog = () => {
     }
   return (
     <div className="comment-log">
-      <CommentSection/>
+      
       <UpdateContext.Provider value={{update , setUpdate}}>
+      <CommentSection/>
       <div className="comment-right-container">
-     <div className="user-container">
-     <div className="user-card">
+      <div className="user-container">
+      <div className="user-card">
       {user? <button className="comment-buttons"  onClick={signUserOut} >log out</button> :<button className="comment-buttons" id="google-button" onClick={signInWithGoogle} >Sign in with Google</button> }
       <p >{user?.displayName}</p>
-      {/* <button onClick={signInWithGithub} >sign in with github</button> domain lazım önce */}
-      {/* usestate to rerender after sign in. so the account info is shown. */}
-      {/* {access info of user via auth} */}
       {user ? <img alt="user picture" src={user?.photoURL || ""} /> : ""}
       </div>
       </div>
-        <CreateForm/>
-        </div>
-        </UpdateContext.Provider>
+      <CreateForm/>
+      </div>
+      </UpdateContext.Provider>
     </div>
   )
 }

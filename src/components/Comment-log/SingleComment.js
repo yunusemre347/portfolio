@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect,useState,useContext } from 'react'
 import "../../Styles/CommentLog.css"
 import {db,auth } from "../../config/firebase"
 import {addDoc,deleteDoc,getDocs,collection,query,where, doc} from "firebase/firestore" //query kullanarak tek bir dosyaya erisebiliriz
@@ -8,11 +8,13 @@ import {faThumbsDown,faThumbsUp} from "@fortawesome/free-solid-svg-icons"
 import {faThumbsUp as faThumbsUpRegular,faThumbsDown as faThumbsDownRegular} from "@fortawesome/free-regular-svg-icons"
 
 import { } from "@fortawesome/fontawesome-svg-core"
+import {UpdateContext} from "./CommentLog"
 
 export const SingleComment = ({comment}) => {
 const [user] = useAuthState(auth);
 const [likes,setLikes] = useState([])
 const [dislikes,setDislikes] = useState([])
+const {update ,setUpdate} = useContext(UpdateContext)  //curly instead of square brackets
 
   const likesRef = collection(db,"likes")
   const likesDoc = query(likesRef, where("commentId","==",comment.id))
@@ -95,20 +97,25 @@ if(user){
 } catch (err) {
 console.log(err,"try catch2")
 }
+
 };
 const likeAction = ()=>{
   if (hasUserDisliked )
   { removeDislike()};
 {   hasUserLiked ? removeLike() :addLike()}
+setUpdate(!update)
 }
 const dislikeAction = ()=>{
   if (hasUserLiked ){ removeLike()}
     { {hasUserDisliked ? removeDislike() : addDislike()} }
+    setUpdate(!update)
 }
 const likedFullIcon=<FontAwesomeIcon icon={faThumbsUp} style={{fontSize:"1.2rem"}} />
 const likedEmptyIcon=<FontAwesomeIcon icon={faThumbsUpRegular} style={{fontSize:"1.2rem"}}/>
 const dislikedFullIcon=<FontAwesomeIcon icon={faThumbsDown} style={{fontSize:"1.2rem"}}/>
 const dislikedEmptyIcon=<FontAwesomeIcon icon={faThumbsDownRegular} style={{fontSize:"1.2rem"}}/>
+
+
 
   return (
     <div className='single-comment-box'>
